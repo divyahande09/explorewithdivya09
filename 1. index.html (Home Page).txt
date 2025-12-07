@@ -1,0 +1,266 @@
+1. index.html (Home Page)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Explore | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Travel & Explore</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Discover New Places</h2>
+    <p>Adventure awaits! Explore the world with us.</p>
+    <button onclick="exploreMore()">Explore Now</button>
+</section>
+
+<footer>
+    <p>© 2025 Travel & Explore. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+2. about.html (About Us Page)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Travel & Explore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>About Us</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="content">
+    <h2>Who We Are</h2>
+    <p>
+        We are passionate travelers helping people discover the world’s most beautiful places.
+        From mesmerizing beaches to adventurous mountains, our goal is to guide you to unforgettable experiences.
+    </p>
+</section>
+
+<footer>
+    <p>© 2025 Travel & Explore. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+3. destinations.html (Extra Page 1)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | Travel & Explore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Top Destinations</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="cards">
+
+    <div class="card">
+        <img src="https://picsum.photos/300/200?travel1" alt="">
+        <h3>Paris, France</h3>
+        <p>The city of love, lights, and culture.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/200?travel2" alt="">
+        <h3>Bali, Indonesia</h3>
+        <p>Beautiful beaches and peaceful nature.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/200?travel3" alt="">
+        <h3>New York, USA</h3>
+        <p>The city that never sleeps.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Travel & Explore. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+4. contact.html (Extra Page 2)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Travel & Explore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="content">
+    <h2>We’d Love to Hear From You</h2>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 Travel & Explore. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+5. styles.css
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+}
+
+header {
+    background: #0f6fc6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url("https://picsum.photos/1200/500?travel") no-repeat center/cover;
+    color: white;
+}
+
+.hero button {
+    padding: 12px 25px;
+    background: #0f6fc6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.content, .cards {
+    padding: 40px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Contact Page */
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0f6fc6;
+    color: white;
+}
+
+
+
+
+6. script.js
+function exploreMore() {
+    alert("Start your travel journey today!");
+}
